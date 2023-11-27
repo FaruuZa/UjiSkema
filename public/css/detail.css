@@ -1,0 +1,114 @@
+* {
+    /* border: solid 1px red; */
+}
+
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: rgb(237, 237, 237);
+}
+
+.navbar {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.kontainer {
+    /* background-color: grey; */
+    /* width: calc(100% - 200px); */
+    width: 80%; /*1152px*/
+    height: 100%;
+    align-self: center;
+    /* justify-content: center; */
+    /* padding: 5px; */
+    padding-top: 15px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.box-detail{
+    background-color: white;
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.kanan{
+width: 75%;
+height: 100%;
+}
+
+.kiri{
+    width: 25%;
+    height: 100%;
+    /* background-color: green; */
+    padding-top: 25px;
+}
+
+.kiri .img{
+    aspect-ratio: 1/1;
+    width: 95%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.kiri .img img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.kanan .det{
+    padding: 20px;
+}
+
+.kanan .det .txtarea{
+    width: 100%;
+    aspect-ratio: 3/1;
+    resize: none;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .kontainer {
+        width: 80%;
+    }
+    .box-detail{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .kontainer {
+        width: 95%;
+    }
+    .box-detail{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 855px) {
+
+    body{
+        overflow-y:scroll ;
+    }
+    .box-detail {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .kanan{
+        width: 100%;
+        height: fit-content;
+    }
+    .kiri{
+        height: fit-content;
+        width: 50%;
+        margin: auto;
+    }
+
+    .img{margin-left:0 !important;}
+
+}
